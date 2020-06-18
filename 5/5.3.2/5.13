@@ -1,0 +1,8 @@
+(a) break;
+(b) int x 写在外面
+(c) case 1:
+    case 3:
+    case 5:
+    case 7:
+    case 9:
+(d) case 标签必须是整形常量表达式，定义时加 const

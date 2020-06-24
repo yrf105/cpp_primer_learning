@@ -21,7 +21,6 @@ int main() {
             cin >> ch;
             if (!cin || ch == 'n') break;
         }
-        
     }
 
     return 0;

@@ -56,7 +56,10 @@
         "forward_list": "cpp",
         "list": "cpp",
         "map": "cpp",
-        "set": "cpp"
+        "set": "cpp",
+        "regex": "cpp",
+        "bitset": "cpp",
+        "ctime": "cpp"
     },
     "C_Cpp.clang_format_fallbackStyle": "Google",
 }

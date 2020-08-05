@@ -48,9 +48,9 @@ QueryResult TextQuery::query(const std::string &word) const {
     static std::shared_ptr<std::set<line_no>> nodata(new std::set<line_no>);
     auto loc = wm.find(word);
     if (loc == wm.end())
-        return QueryResult(word, nodata, file);
+        return std::make_tuple(word, nodata, file);
     else 
-        return QueryResult(word, loc -> second, file);
+        return std::make_tuple(word, loc -> second, file);
 }
 
 #endif

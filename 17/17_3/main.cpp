@@ -21,7 +21,7 @@ void runQuery(ifstream &infile) {
 } 
 
 int main() {
-    string file_name = "C:\\Users\\Yuerf\\Desktop\\ongoing\\cpp_primer_learning\\12\\12_30\\txt.in";
+    string file_name = "C:\\Users\\Yuerf\\Desktop\\ongoing\\cpp\\cpp_primer_learning\\17\\17_3\\txt.in";
     ifstream infile;
     infile.open(file_name);
 

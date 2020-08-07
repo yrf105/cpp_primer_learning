@@ -8,8 +8,8 @@ int main() {
     // 3
     int i = (3.14);
     // (c)
-    double wage = 9999.99;
-    double salary = wage;
+    double wage;
+    double salary = wage = 9999.99;
     // (d)
     // 3
     int ii = 3.14;

@@ -32,10 +32,10 @@ private:
 
 void QueryResult::print(ostream &os) {
     os << "element occurs " << times << " times" << endl;;
-    for (auto i : line_number) {
-        os << "(line " << i << ") " << endl 
-            << p -> 
-    }
+    // for (auto i : line_number) {
+    //     os << "(line " << i << ") " << endl 
+    //         << p -> 
+    // }
 }
 
 #endif

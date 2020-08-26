@@ -2,14 +2,19 @@
  * ex_13_5 
  * ex_13_8
  * ex_13_11
+ * ex_13_22
+ * ex_13_30
+ * ex_13_31
 **/
 
 #ifndef HAS_PTR_HPP
 #define HAS_PTR_HPP
 
 #include <string>
+#include <iostream>
 
 class HasPtr {
+    friend void swap(HasPtr&, HasPtr&);
 
 public:
     HasPtr(const std::string &s = std::string()):
@@ -25,6 +30,9 @@ public:
         }
         return *this;
     }
+    bool operator< (const HasPtr &hp) {
+        return *ps < *hp.ps;
+    }
     ~HasPtr(){
         delete ps;
     };
@@ -34,4 +42,11 @@ private:
     int i;
 };
 
+inline
+void swap(HasPtr &lhs, HasPtr &rhs){
+    using std::swap;
+    swap(lhs.i, rhs.i);
+    swap(lhs.ps, rhs.ps);
+    std::cout << "swap run" << std::endl;
+}
 #endif

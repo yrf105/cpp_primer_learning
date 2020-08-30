@@ -14,6 +14,9 @@ int main() {
     std::cout << sv2.begin() << " " << sv2.end() << " " << sv2.capacity() << std::endl;
     sv2.reserve(5);
     std::cout << sv2.begin() << " " << sv2.end() << " " << sv2.capacity() << std::endl;
+
+    StrVec sv3({ "yue", "rui", "feng" });
+
     std::cout << "===================" << std::endl;
     std::vector<int> ivec;
     ivec.push_back(1);
